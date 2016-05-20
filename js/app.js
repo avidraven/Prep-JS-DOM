@@ -20,6 +20,7 @@ element.id sets or returns the identifier of an element
 element.innerHTML sets or returns the HTML element content of an element
 node.appendChild() is a method that appends a node as the last child of a node*/
 
+//moving analogy: make box, label box, put stuff in box, put box in truck
 var catBox = document.createElement('div');
 catBox.id = "meow";
 catBox.innerHTML = "Overcome its fear of cucumbers!";
@@ -50,13 +51,15 @@ element.className is a property that sets or returns the class name of an elemen
 var getBuckets = ["Become more famous than that overrated fraud Garfield", "Visit Aoshima (aka Japan's Cat Island)", "Exhaust my entire 9 lives", "Pass DevLeague's coding challenge", "Become the next internet sensation"];
 
 
-for (i = 0; i < getbuckets.length; i++){
+for (i = 0; i < getBuckets.length; i++){
 	var bucketList = document.createElement("li");
 	bucketList.className = "daList";
-	bucketList.innerHTML = getbuckets[i];
+	bucketList.innerHTML = getBuckets[i];
 	buckets.appendChild(bucketList);
 }
 
+//cmd + shift + d = duplicate
+//cmd + ctrl + down = move 
 
 
 //Exerise 4
@@ -66,7 +69,7 @@ for (i = 0; i < getbuckets.length; i++){
 Declare a variable named changeList and assign it to the getElementsByTagName method.
 */
 
-var changelist = document.getElementsByTagName('li');
+var changeList = document.getElementsByTagName('li');
 changeList[0].innerHTML = "I'm coming for you Felix!";
 
 
@@ -77,5 +80,6 @@ changeList[0].innerHTML = "I'm coming for you Felix!";
 
 var changeListAgain = document.getElementsByClassName('daList');
 changeListAgain[2].innerHTML = "I got 1 life to live!";
+
 };
 
